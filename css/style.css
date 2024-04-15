@@ -25,12 +25,12 @@ body {
     --mainBlue : #4a9dcf;
     --mainPink : #e79cb8;}
 
-.centerbox {width: 1200px; margin: 0 auto;}
+.centerbox {max-width: 1200px; margin: 0 auto;}
 
 /* header */
-header {width: 100vw; height: 188px; background: var(--mainYellow); }
+header {width: 100vw; height: 188px; background: var(--mainYellow);}
 header h1 {text-align: center; margin-top: 11px;}
-header nav {height: 66px; width: 100%;}
+header nav {height: 66px; width: 100%; }
 header nav .gnb {font-size: 0; text-align: center;}
 header nav .gnb li {display: inline-block; line-height: 66px; position: relative; text-align: center;}
 header nav .gnb li a {font-size: 26px; padding: 0 64px; display: block; color: 
@@ -42,10 +42,13 @@ header nav .gnb li .lnb li a {font-size: 20px; color: #fff; padding: 0; transiti
 header .lnb_bg {position: absolute; top: 198px; background: var(--mainPink); opacity: 0.9; width: 100vw; height: 0px; left: 0; transition: 0.5s; overflow: hidden; z-index: 2;}
 
 /*nav hover */
+header nav .gnb li.on a {color: var(--mainBlue);}
 header nav .gnb li:hover a {color: var(--mainBlue);}
 header nav .gnb:hover li .lnb {opacity: 1; visibility: visible;}
 header nav .gnb li .lnb li:hover {background: #fff; border-radius: 20px;}
 header nav .gnb li .lnb li:hover a {color: var(--mainBlue);}
+header nav .gnb li .lnb li.on {background: #fff; border-radius: 20px;}
+header nav .gnb li .lnb li.on a {color: var(--mainBlue);}
 header nav:hover ~ .lnb_bg {height: 290px;}
 
 /* visual */
@@ -115,7 +118,7 @@ footer div {color: #fff; font-family: 'Pretendard-Regular'; line-height: 21px; f
 .snb {height: 58px; width: 100vw; font-family: 'Pretendard-Regular'; border-bottom:1px solid #e3e3e3;}
 .snb .home {float: left; border-left: 1px solid #e3e3e3; width: 58px; height: 58px; box-sizing: border-box; background: url('../images/icon_home.png') no-repeat center; transition: 0.5s;}
 .snb .now_gnb {width: 243px; border-left: 1px solid #e3e3e3; float: left; height: 58px; position: relative; box-sizing: border-box; z-index: 5;}
-.snb .now_gnb .gnb_box {background: #fff; position: absolute; top: 0; left: 0; width: 100%; max-height: 58px; transition: 0.5s; overflow: hidden;}
+.snb .now_gnb .gnb_box {background: #fff; position: absolute; top: 0; left: 0; width: 100%; transition: 0.5s; overflow: hidden; max-height: 58px;}
 .snb .now_gnb .gnb_box  li {line-height: 58px; text-indent: 40px; border-bottom: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; border-left: 1px solid #e3e3e3; }
 .snb .now_gnb .gnb_box  li:first-child {border-right: 0; border-left: 0;}
 .snb .now_gnb .gnb_box  li a {display: block; transition: 0.5s;}
@@ -131,7 +134,7 @@ footer div {color: #fff; font-family: 'Pretendard-Regular'; line-height: 21px; f
 
 /* hover */
 .snb .home:hover {background: var(--mainPink) url('../images/icon_home_o.png') no-repeat center;}
-.snb .now_gnb:hover .gnb_box {max-height: 360px;}
+.snb .now_gnb:hover .gnb_box {max-height: 500px;}
 .snb .now_lnb:hover .lnb_box {max-height: 360px;}
 
 /* sub01_section */
@@ -238,3 +241,11 @@ footer div {color: #fff; font-family: 'Pretendard-Regular'; line-height: 21px; f
 
 .sub05_section #money .plus {font-size: 20px; text-align: left; height: 100px; width: 100%; float: left; color: #4b4b4b;}
 .sub05_section #money .plus p {line-height: 31px;}
+
+@media screen and (min-width:641px) and (max-width:1120px){
+    header nav .gnb li a {padding: 0 3vw; }
+}
+
+@media screen and (max-width:640px){
+    header nav .gnb li a {padding: 0 3vw; }
+}
