@@ -29,17 +29,16 @@ body {
 
 /* header */
 header {width: 100vw; height: 188px; background: var(--mainYellow);}
-header h1 {text-align: center; margin-top: 11px;}
+header h1 {text-align: center;}
 header nav {height: 66px; width: 100%; }
 header nav .gnb {font-size: 0; text-align: center;}
 header nav .gnb li {display: inline-block; line-height: 66px; position: relative; text-align: center;}
-header nav .gnb li a {font-size: 26px; padding: 0 64px; display: block; color: 
-    #494d50; transition: 0.5s;}
+header nav .gnb li a {font-size: 26px; padding: 0 64px; display: block; color: #494d50; transition: 0.5s;}
 
-header nav .gnb li .lnb {position: absolute; width: 100%; z-index: 3; top: 56px; padding: 30px 0; box-sizing: border-box; opacity: 0; transition: 0.5s; visibility: hidden; }
+header nav .gnb li .lnb {position: absolute; width: 100%; z-index: 3; top: 56px; padding: 30px 0; box-sizing: border-box; opacity: 0; transition: 0.3s; visibility: hidden; }
 header nav .gnb li .lnb li {height: 44px; line-height: 44px; display: block; transition: 0.5s; }
 header nav .gnb li .lnb li a {font-size: 20px; color: #fff; padding: 0; transition: 0.5s;}
-header .lnb_bg {position: absolute; top: 198px; background: var(--mainPink); opacity: 0.9; width: 100vw; height: 0px; left: 0; transition: 0.5s; overflow: hidden; z-index: 2;}
+header .lnb_bg {position: absolute; top: 188px; background: var(--mainPink); opacity: 0.9; width: 100vw; height: 0px; left: 0; transition: 0.5s; overflow: hidden; z-index: 2;}
 
 /*nav hover */
 header nav .gnb li.on a {color: var(--mainBlue);}
@@ -76,7 +75,7 @@ section h2 span {font-size: 47px;}
 
 .section1 {background: var(--mainBlue); height: 422px; width: 100vw; padding:90px 0 0 0;}
 .section1 .cate {margin-top: 80px;}
-.section1 .cate li {width: 273px; height: 273px; border-radius: 27px; overflow: hidden; background: #f8db4d; text-align: center; font-size: 30px; line-height: 67px; float: left;margin-right: 35px; }
+.section1 .cate li {width: 273px; height: 273px; border-radius: 27px; overflow: hidden; background: #f8db4d; text-align: center; font-size: 30px; line-height: 67px; float: left; margin-right: 35px; }
 .section1 .cate li a {color: #494d50;}
 .section1 .cate li:nth-child(2n) {background: var(--mainPink);}
 .section1 .cate li:nth-child(2n) a {color: #fff;}
@@ -150,11 +149,11 @@ footer div {color: #fff; font-family: 'Pretendard-Regular'; line-height: 21px; f
 
 .sub01_section #brandstory .first,
 .sub01_section #brandstory .second,
-.sub01_section #brandstory .first {width: 1200px; height: 535px; margin-bottom: 90px;}
+.sub01_section #brandstory .third {width: 1200px; height: 535px; margin-bottom: 90px;}
 
 .sub01_section #brandstory .first .cont_box {float: left;}
 .sub01_section #brandstory .second .cont_box {float: right; text-align: right;}
-.sub01_section #brandstory .third .cont_box {float: left; width: 600px;}
+.sub01_section #brandstory .third .cont_box {float: left;}
 
 .sub01_section #brandstory .first .cont_box h3 {font-size: 33px; font-weight: lighter; font-family: 'PartialSansKR-Regular'; padding-top: 170px; color: #fff; margin-bottom: 26px;}
 .sub01_section #brandstory .second .cont_box h3 {font-size: 33px; font-weight: lighter; font-family: 'PartialSansKR-Regular'; padding-top: 140px; color: #fff; margin-bottom: 26px;}
@@ -242,10 +241,266 @@ footer div {color: #fff; font-family: 'Pretendard-Regular'; line-height: 21px; f
 .sub05_section #money .plus {font-size: 20px; text-align: left; height: 100px; width: 100%; float: left; color: #4b4b4b;}
 .sub05_section #money .plus p {line-height: 31px;}
 
-@media screen and (min-width:641px) and (max-width:1120px){
+@media screen and (min-width:641px) and (max-width:1200px){
+    header h1 {margin-top: 0;}
     header nav .gnb li a {padding: 0 3vw; }
+    .section1 {text-align: center; height: 320px;}
+    .section1 .cate {margin-top: 70px; text-align: center; padding: 0 3.5vw; box-sizing: border-box;}
+    .section1 .cate li {width: 20vw; height: 20vw; font-size: 3vw; line-height: 6vw; margin-right: 4vw;}
+    .section1 .cate li a img {width: 100%;}
+
+    .section2 {padding-top: 200px; height: 770px;}
+    .section2 .menu {padding: 0 3vw; }
+    .section2 .menu li {width: 30vw; height: 20vw; margin-right: 2vw;}
+    .section2 .menu li a {font-size: 2.5vw;}
+    .section2 .menu li a img {width: 100%;}
+    .section2 .menu li a span {top: 2vw;}
+
+    .section3 { height: 840px;}
+    .section3 .char {padding: 0 8vw;}
+    .section3 .char li {float: left; width: 40vw; height: 20vw; margin-right: 3.5vw; margin-bottom: 3.5vw;}
+    .section3 .char li .left .num { font-size: 5vw; height: 8vw; line-height: 5vw; padding-top: 3vw; }
+    .section3 .char li .left b {font-size: 3vw; margin-bottom: 1vw;}
+    .section3 .char li .left span {font-size: 1.5vw; }
+    .section3 .char li img {width: 50%; height: 100%;} 
+
+    .sub01_section #insa {word-break: keep-all;}
+    .sub01_section #insa .insa_text .big {font-size: 30px; margin-bottom: 52px; line-height: 45px;}
+    .sub01_section #insa .insa_text .small {font-size: 20px; line-height: 36px;}
+
+    .sub01_section #brandstory .first,
+    .sub01_section #brandstory .second,
+    .sub01_section #brandstory .third {width: 85vw; height: 30vw; margin-bottom:90px; margin-left: 7vw;}
+    
+    .sub01_section #brandstory .first .cont_box h3 {font-size: 2.3vw; padding-top: 5vw; color: #fff; margin-bottom: 1.5vw;}
+    .sub01_section #brandstory .second .cont_box h3 {font-size: 2.3vw; padding-top: 4vw; color: #fff; margin-bottom: 1.5vw;}
+    .sub01_section #brandstory .third .cont_box h3 {font-size: 2.3vw; padding-top: 3vw; color: #fff; margin-bottom: 1.5vw;}
+    .sub01_section #brandstory .third .cont_box h3:nth-child(3) {padding-top: 2.5vw;}
+    .sub01_section #brandstory .cont_box .cont {color: #fff; font-size: 2vw; line-height: 2.8vw;}
+    .sub01_section #brandstory .first .img_box {float: right; border-radius: 50%; overflow: hidden; height: 30vw; width: 30vw;}
+    .sub01_section #brandstory .second .img_box {float: left; border-radius: 50%; overflow: hidden; height: 30vw; width: 30vw;}
+    .sub01_section #brandstory .third .img_box {float: right; border-radius: 50%; overflow: hidden; height: 30vw; width: 30vw;}
+    .sub01_section #brandstory div img {width: 100%; height: 100%; object-fit: cover;}
+
+    .sub01_section #brandstory .first::before { width: 78vw; height: 30vw; background: var(--mainPink); position: absolute; z-index: -1;}
+
+    .sub01_section #brandstory .second::before {width: 75vw; height: 30vw; background: #fad546; position: absolute; z-index: -1;}
+
+    .sub01_section #brandstory .third::before {width: 78vw; height: 30vw; background: var(--mainBlue); position: absolute; z-index: -1;}
+
+    .sub03_section {height: auto;}
+    .sub03_section .menu {padding: 147px 4vw 195px 4vw; box-sizing: border-box;}
+    .sub03_section .menu h2 {margin-bottom: 100px;}
+    .sub03_section .menu .menus li {margin-top: 10vw; width: 100%; height: 25vw; }
+    .sub03_section .menu .menu1 .menu_img,
+    .sub03_section .menu .menu3 .menu_img {width: 40vw; height: 25vw; border-radius: 20px; margin-top: -3vw; float: left; overflow: hidden; }
+    .sub03_section .menu .menu2 .menu_img,
+    .sub03_section .menu .menu4 .menu_img {width: 40vw; height: 25vw; border-radius: 20px; margin-top: -3vw; float: right; overflow: hidden; }
+    .sub03_section .menu .menu_img img {width: 100%; height: 100%; object-fit: cover;}
+    
+    .sub03_section .menu .menu1 .menu_text,
+    .sub03_section .menu .menu3 .menu_text {width: 48vw; height: 25vw;}
+    .sub03_section .menu .menu2 .menu_text,
+    .sub03_section .menu .menu4 .menu_text { width: 48vw; height: 25vw;}
+
+    .sub03_section .menu .menus li .menu_text h3 {font-size: 3vw; margin: 4vw auto 2.5vw auto;}
+    .sub03_section .menu .menus li.menu2 .menu_text h3 {margin-top: 3vw;}
+    .sub03_section .menu .menus li.menu3 .menu_text h3 {margin-top: 7vw;}
+
+    .sub03_section .menu .menus li .menu_text .cont {margin: 0 auto 2.5vw auto; font-size: 2.3vw; line-height: 2.8vw;}
+
+    .sub03_section .menu .menu1::before {height: 25vw;}
+    .sub03_section .menu .menu2::before {height: 25vw;}
+    .sub03_section .menu .menu3::before {height: 25vw;}
+    .sub03_section .menu .menu4::before {height: 25vw;}
+
+    .sub05_section h2 {margin-bottom: 100px; padding-top: 147px;}
+    .sub05_section #step {padding: 0px 4vw 90px 4vw; height: auto;}
+    .sub05_section #step .step_box {padding-top: 0px;}
+    .sub05_section #step .step_box li {height: 10vw; width: 90vw; }
+    .sub05_section #step .step_box li .left {width: 40vw; height: 100%; padding-right: 3vw;}
+    .sub05_section #step .step_box li .left .step_title {font-size:3vw; margin-bottom: 0.5vw;}
+    .sub05_section #step .step_box li .left .step_title .step_num {font-size: 1.5vw; margin-right: 0.5vw; }
+    .sub05_section #step .step_box li .left .step_cont {font-size: 1.8vw;}
+
+    .sub05_section #step .step_box li .right {width: 40vw; height: 100%; padding-left: 3vw; }
+    .sub05_section #step .step_box li .right .step_title {font-size:3vw; margin-bottom: 0.5vw;}
+    .sub05_section #step .step_box li .right .step_title .step_num {font-size: 1.5vw; margin-right: 1vw;}
+    .sub05_section #step .step_box li .right .step_cont {font-size: 1.8vw;}
+
+    .sub05_section #step::before {content:''; width: 2px; height: 65vw;position: absolute; top: 276px; left: 50%; margin-left: -1px; background: #fff;} 
+    
+    .sub05_section #step .step_box li::after {width: 5vw; height: 5vw; border-radius: 50%; top: 0; left: 50%; transform: translateX(-50%);}
+    .sub05_section #step .step_box li:nth-child(1):after {background: #fff url('../images/subpage1-1.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(2):after {background: #fff url('../images/subpage1-2.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(3):after {background: #fff url('../images/subpage1-3.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(4):after {background: #fff url('../images/subpage1-4.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(5):after {background: #fff url('../images/subpage1-5.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(6):after {background: #fff url('../images/subpage1-6.png') no-repeat center; background-size: cover;}
+
+    .sub05_section #money {height: 650px; padding: 0px 5vw; }
+    .sub05_section #money .circle {width: 30vw; height: 15vw; margin-left: -3vw; padding-top: 2vw; margin-bottom: 4vw;} 
+    .sub05_section #money .circle:nth-child(2) {margin-left: 1.8vw;}
+    .sub05_section #money .circle h4 {font-size: 3vw; line-height: 3vw;}
+    .sub05_section #money .circle .cont_box {margin-top: 1.6vw; font-size: 1.5vw;}
+    .sub05_section #money .circle .cont_box span {margin-bottom: 1vw;}
+    .sub05_section #money .plus {font-size: 1.8vw;}
+    .sub05_section #money .plus p {line-height: 4vw;}
 }
 
 @media screen and (max-width:640px){
-    header nav .gnb li a {padding: 0 3vw; }
+    .pc {display: none;}
+    header {background: none; position: absolute; z-index: 10;  height: 50px;}
+    header h1 {margin: 0 auto; }
+    header h1 img {width: 30vw;}
+    header .hamburger {position: relative; width: 36px; height: 36px; left: 30px; top: -50px; z-index: 12;}
+    header .hamburger::before {content:''; position: absolute; top: 6px; left: 3px; width: 30px; height: 3px; background: #fff; transform: rotate(0deg); transition: 0.5s;}
+    header .hamburger::after {content:''; position: absolute; top: 26px; left: 3px; width: 30px; height: 3px; background: #fff; transform: rotate(0deg); transition: 0.5s;}
+
+    header .hamburger.on::before {transform: rotate(-45deg); top: 16px;}
+    header .hamburger.on::after {transform: rotate(45deg); top: 16px;}
+
+    header nav {height: 100vh; width: 60vw; background: var(--mainPink); opacity: 0.9; position: absolute; left: 0%; top: 0 ; z-index: 11; padding: 20px 0; display: none;}
+    header nav .gnb {padding-top: 100px;}
+    header nav .gnb li {display: block; position: unset; line-height: 50px;}
+
+    header nav .gnb li .lnb {display: block; width: 100%; z-index: 5; padding: 0; box-sizing: border-box; position: unset; display: none; }
+
+    .visual {height: 100vh; width: 100vw; position: absolute; top: 0; left: 0;}
+    .visual img {width: 100%; height: 100%; object-fit: cover; }
+    .visual .text_box {width: 80vw; height: 300px; }
+    .visual .text_box .title img {width: 75vw;}
+    .visual .text_box .text {font-size: 6vw; line-height: 8vw; text-align: left; margin-top: 20px; font-weight: lighter; width: 50vw; word-break: keep-all;}
+
+    section h2 {text-align: center; font-size: 6vw; color: #fff; line-height: 7vw; }
+    section h2 img {width: 20vw; margin-right: 1vw;}
+    section h2 span {font-size: 4vw;}
+
+    .section1 {height: 430px; padding-top: 108vh; padding-bottom: 70px;}
+    .section1 .cate {margin-top: 30px; text-align: center; padding: 0 7vw; box-sizing: border-box;}
+    .section1 .cate li {width: 40vw; height: 40vw; font-size: 5vw; line-height: 12vw; margin-right: 5vw; margin-bottom: 5vw;}
+    .section1 .cate li:nth-child(2n) {margin-right: 0;}
+    .section1 .cate li a img {width: 100%;}
+
+    .section2 {padding-top: 70px; height: auto; margin-bottom: 70px;}
+    .section2 h2 {margin-bottom: 0;}
+    .section2 .menu {padding: 0 3vw; margin-top: 30px;}
+    .section2 .menu li {width: 70vw; height: 50vw; margin: 0 auto 5vw auto; overflow: hidden; float: none;}
+    .section2 .menu li:last-child {margin: 0 auto; }
+    .section2 .menu li a {font-size: 5vw;}
+    .section2 .menu li a img {height: 100%; width: 100%; object-fit: cover;}
+    .section2 .menu li a span {top: 5vw;}
+
+    .section3 {padding-top: 70px; height: auto; padding-bottom: 70px;}
+    .section3 h2 {margin-bottom: 0px;}
+    .section3 .char {padding: 0 3vw; margin-top: 30px;}
+    .section3 .char li {float: none; width: 70vw; height: 30vw; margin: 0 auto 5vw auto;}
+    .section3 .char li:nth-child(2n) {margin: 0 auto 5vw auto;}
+    .section3 .char li .left .num { font-size: 10vw; height: 13vw; line-height: 10vw; padding-top: 4vw; }
+    .section3 .char li .left b {font-size: 5vw; margin-bottom: 1vw;}
+    .section3 .char li .left span {font-size: 2.5vw; color: #494d50; display: block;}
+    .section3 .char li img {float: none; width: 50%; height: 100%;} 
+
+    .sub_visual .text_box {width: 80vw; height: 220px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;margin-top: 80px;}
+    .sub_visual .text_box .title img {width: 100%;}
+    .sub_visual .text_box .text {font-size: 4vw; text-align: left; margin-top: 18px; margin-left: 20px; line-height: 5vw;}
+
+    .snb {height: 45px;}
+    .snb .home {width: 45px; height: 45px; }
+    .snb .now_gnb {width: 40vw; height: 45px; }
+    .snb .now_gnb .gnb_box {max-height: 45px;}
+    .snb .now_gnb .gnb_box  li {line-height: 45px; text-indent: 20px; }
+    .snb .now_gnb img {position: absolute; right: 20px; top: 15px;}
+    .snb .now_lnb {width: 40vw; height: 45px; }
+    .snb .now_lnb .lnb_box {max-height: 45px;}
+    .snb .now_lnb .lnb_box li {line-height: 45px; text-indent: 20px;}
+    .snb .now_lnb img {position: absolute; right: 20px; top: 15px;}
+
+    .sub01_section section {padding: 70px 0 60px 0;}
+    .sub01_section section h2 {font-size: 30px; margin-bottom: 30px;}
+    
+    .sub01_section #insa .insa_text {text-align: center; margin-bottom: 15px; word-break: keep-all;}
+    .sub01_section #insa .insa_text .big {font-size: 5vw; margin-bottom: 3vw; line-height: 7vw;}
+    .sub01_section #insa .insa_text .small {font-size: 4vw; line-height: 6vw;}
+
+    .sub01_section #brandstory {height: auto;}
+    .sub01_section #brandstory .first,
+    .sub01_section #brandstory .second,
+    .sub01_section #brandstory .third {width: 85vw; height: 30vw; margin-bottom:30px; margin-left: 7vw;}
+    
+    .sub01_section #brandstory .first .cont_box h3 {font-size: 3vw; padding-top: 5vw; color: #fff; margin-bottom: 2vw;}
+    .sub01_section #brandstory .second .cont_box h3 {font-size: 3vw; padding-top: 4vw; color: #fff; margin-bottom: 2vw;}
+    .sub01_section #brandstory .third .cont_box h3 {font-size: 3vw; padding-top: 3vw; color: #fff; margin-bottom: 2vw;}
+    .sub01_section #brandstory .third .cont_box h3:nth-child(3) {padding-top: 2.5vw;}
+    .sub01_section #brandstory .cont_box .cont {color: #fff; font-size: 2.1vw; line-height: 2.8vw;}
+    .sub01_section #brandstory .first .img_box {float: right; border-radius: 50%; overflow: hidden; height: 30vw; width: 30vw;}
+    .sub01_section #brandstory .second .img_box {float: left; border-radius: 50%; overflow: hidden; height: 30vw; width: 30vw;}
+    .sub01_section #brandstory .third .img_box {float: right; border-radius: 50%; overflow: hidden; height: 30vw; width: 30vw;}
+    .sub01_section #brandstory div img {width: 100%; height: 100%; object-fit: cover;}
+
+    .sub01_section #brandstory .first::before { width: 78vw; height: 30vw; background: var(--mainPink); position: absolute; z-index: -1;}
+
+    .sub01_section #brandstory .second::before {width: 75vw; height: 30vw; background: #fad546; position: absolute; z-index: -1;}
+
+    .sub01_section #brandstory .third::before {width: 78vw; height: 30vw; background: var(--mainBlue); position: absolute; z-index: -1;}
+
+    .sub03_section {height: auto;}
+    .sub03_section .menu {padding: 70px 4vw; box-sizing: border-box;}
+    .sub03_section .menu h2 {margin-bottom: 50px; font-size: 30px;}
+    .sub03_section .menu .menus li {margin-top: 10vw; width: 100%; height: 25vw; }
+    .sub03_section .menu .menu1 .menu_img,
+    .sub03_section .menu .menu3 .menu_img {width: 40vw; height: 25vw; border-radius: 20px; margin-top: -3vw; float: left; overflow: hidden; }
+    .sub03_section .menu .menu2 .menu_img,
+    .sub03_section .menu .menu4 .menu_img {width: 40vw; height: 25vw; border-radius: 20px; margin-top: -3vw; float: right; overflow: hidden; }
+    .sub03_section .menu .menu_img img {width: 100%; height: 100%; object-fit: cover;}
+    
+    .sub03_section .menu .menu1 .menu_text,
+    .sub03_section .menu .menu3 .menu_text {width: 48vw; height: 25vw;}
+    .sub03_section .menu .menu2 .menu_text,
+    .sub03_section .menu .menu4 .menu_text { width: 48vw; height: 25vw;}
+
+    .sub03_section .menu .menus li .menu_text h3 {font-size: 3vw; margin: 4vw auto 2.5vw auto;}
+    .sub03_section .menu .menus li.menu2 .menu_text h3 {margin-top: 3vw;}
+    .sub03_section .menu .menus li.menu3 .menu_text h3 {margin-top: 7vw;}
+
+    .sub03_section .menu .menus li .menu_text .cont {margin: 0 auto 2.5vw auto; font-size: 2.3vw; line-height: 2.8vw;}
+
+    .sub03_section .menu .menu1::before {height: 25vw;}
+    .sub03_section .menu .menu2::before {height: 25vw;}
+    .sub03_section .menu .menu3::before {height: 25vw;}
+    .sub03_section .menu .menu4::before {height: 25vw;}
+
+    .sub05_section {height: auto;  padding-bottom: 50px;}
+    .sub05_section h2 {font-size: 30px; margin-bottom: 30px; padding-top: 70px;}
+    .sub05_section #step {padding-bottom: 50px; height: auto;}
+    .sub05_section #step .step_box {padding: 30px 3vw 0 3vw;}
+    .sub05_section #step .step_box li {height: auto; width: 90vw; padding: 3vw 0;}
+    .sub05_section #step .step_box li .left {width: 90%; height: 100%; float: none; text-align: left; margin-left: 20vw;}
+    .sub05_section #step .step_box li .left .step_title {font-size:5vw; margin-bottom: 0.5vw; }
+    .sub05_section #step .step_box li .left .step_title .step_num {font-size: 3vw; display: block; margin-bottom: 1vw;}
+    .sub05_section #step .step_box li .left .step_cont {font-size: 2.5vw; text-align: left; float: none;}
+
+    .sub05_section #step .step_box li .right {width: 90%; height: 100%; float: none; text-align: left; margin-left: 20vw; padding-left: 0;}
+    .sub05_section #step .step_box li .right .step_title {font-size:5vw; margin-bottom: 0.5vw; }
+    .sub05_section #step .step_box li .right .step_title .step_num {font-size: 3vw; display: block; margin-bottom: 1vw;}
+    .sub05_section #step .step_box li .right .step_cont {font-size: 2.5vw; text-align: left; float: none;}
+
+    .sub05_section #step::before {content:''; width: 0px; height: 0vw;position: absolute; top: 0; left: 0; margin-left: 0px; background: none;} 
+    
+    .sub05_section #step .step_box li::after {width: 10vw; height: 10vw; border-radius: 50%; top: 50%; left: 5.5%; transform: translateY(-50%);}
+    .sub05_section #step .step_box li:nth-child(1):after {background: #fff url('../images/subpage1-1.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(2):after {background: #fff url('../images/subpage1-2.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(3):after {background: #fff url('../images/subpage1-3.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(4):after {background: #fff url('../images/subpage1-4.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(5):after {background: #fff url('../images/subpage1-5.png') no-repeat center; background-size: cover;}
+    .sub05_section #step .step_box li:nth-child(6):after {background: #fff url('../images/subpage1-6.png') no-repeat center; background-size: cover;}
+
+    .sub05_section #money {height: auto; padding-bottom: 15px; }
+    .sub05_section #money h2 {margin-bottom: 50px;}
+    .sub05_section #money .circle {width: 75vw; height: 38vw; padding-top: 4vw; float: none; margin: 0 auto 4vw auto;} 
+    .sub05_section #money .circle h4 {font-size: 8vw; line-height: 12vw;}
+    .sub05_section #money .circle .cont_box {margin-top: 3vw; font-size: 4vw;}
+    .sub05_section #money .circle .cont_box span {margin-bottom: 3vw;}
+    .sub05_section #money .plus {font-size: 3vw; padding: 0 5vw; box-sizing: border-box; word-break: keep-all; margin-top: 5vw; float: none;}
+    .sub05_section #money .plus p {line-height: 5vw;}
 }

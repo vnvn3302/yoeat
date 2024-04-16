@@ -22,3 +22,18 @@ $('.gnb > li > a').each(function(){
     };
 
 })
+
+$('.hamburger').click(function(){
+    $(this).toggleClass('on')
+    $('nav').fadeToggle();
+})
+
+if($(window).width() < 640){
+    $('.gnb > li').mouseenter(function(){
+        $(this).find('.lnb').slideDown();
+    })
+    $('.gnb > li').mouseleave(function(){
+        $(this).find('.lnb').slideUp();
+    })
+}
+
