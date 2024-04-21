@@ -29,6 +29,7 @@ $('.hamburger').click(function(){
 })
 
 if($(window).width() < 640){
+    $('.gnb > li > a').attr('href','javascript:void(0)');
     $('.gnb > li').mouseenter(function(){
         $(this).find('.lnb').slideDown();
     })
